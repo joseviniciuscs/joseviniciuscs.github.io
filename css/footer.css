@@ -1,0 +1,84 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  max-width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  padding: 70px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  position: relative;
+}
+.footer-container::before {
+  content: "";
+  display: block;
+  height: 35px;
+  width: 100%;
+  background: linear-gradient(to right, #551a8b, #9500d3);
+  position: absolute;
+  z-index: -1px;
+  top: -17px;
+  border-radius: 50px;
+}
+.footer-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #ccc;
+  word-wrap: normal;
+}
+.footer-lista {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.7rem;
+  gap: 20px;
+  position: relative;
+}
+.ctt-footer {
+  color: #fff;
+}
+.footer-direitos {
+  font-size: 0.875rem;
+  color: #8f8f8f;
+  font-weight: normal;
+  display: flex;
+}
+.whats {
+  position: absolute;
+  width: 40px;
+  height: auto;
+  left: -47px;
+  top: 70px;
+}
+.insta {
+  position: absolute;
+  width: 40px;
+  height: auto;
+  left: -47px;
+  top: 140px;
+}
+.email {
+  position: absolute;
+  width: 40px;
+  height: auto;
+  left: -47px;
+  top: 8px;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .ctt-footer {
+    font-size: 1rem;
+  }
+  .email,
+  .whats,
+  .insta {
+    display: none;
+  }
+}

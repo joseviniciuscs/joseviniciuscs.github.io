@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="150" viewBox="0 0 300 150">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 73.611px;
+      }
+
+      .cls-1 {
+        fill: #380050;
+      }
+
+      .cls-2 {
+        font-family: Verdana;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #9500d3;
+      }
+    </style>
+  </defs>
+  <text id="daCruzTech" class="cls-1" transform="translate(13.558 87.45) scale(0.604)"><tspan class="cls-2">daCruz</tspan><tspan class="cls-3">Tech</tspan></text>
+</svg>

@@ -1,0 +1,183 @@
+.bg-formacao {
+  background-color: #141414;
+  color: #fff;
+}
+.formacao {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+.subtitulo {
+  color: #000;
+}
+.formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #a3a3a3;
+  margin-left: 40px;
+}
+.formacao-escola {
+  gap: 20px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  position: relative;
+}
+.faculdade {
+  flex: 1;
+  background: #000000;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+.formacao-escola li {
+  position: relative;
+}
+.formacao-tipo {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 0.875rem;
+  color: #8f8f8f;
+}
+.formacao-faculdade {
+  display: block;
+  margin-top: 45px;
+  font-size: 0.875rem;
+  color: #8f8f8f;
+}
+.formacao-cargo::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#551a8b, #9500d3);
+  position: absolute;
+  top: 52px;
+  left: -4px;
+}
+.formacao-texto strong {
+  color: #fff;
+}
+.formacao-extra {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+}
+.cursos {
+  position: relative;
+}
+.titulo-curso {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  color: #8f8f8f;
+  margin-bottom: 30px;
+}
+.carga-horaria {
+  font-size: 1.125rem; /* 18px */
+  color: #8f8f8f;
+}
+.cursos-lista {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.cursos-lista li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.cursos-lista li h3 {
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+.icone-curso {
+  position: absolute;
+  width: 25px;
+  height: auto;
+  left: -35px;
+  top: -5px;
+}
+.idiomas {
+  position: relative;
+}
+.titulo-idiomas {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  color: #8f8f8f;
+  margin-bottom: 30px;
+}
+.icone-idioma {
+  position: absolute;
+  width: 25px;
+  height: auto;
+  left: -35px;
+  top: -5px;
+}
+.idiomas-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.idiomas-lista li {
+  display: flex;
+  justify-content: start;
+  gap: 8px;
+  font-size: 1.125rem;
+}
+.idioma-nivel {
+  font-size: 1.125rem;
+  color: #8f8f8f;
+}
+.idioma-tipo {
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+
+@media (max-width: 800px) {
+  .formacao {
+    grid-template-columns: 1fr; /* Torna o layout em uma única coluna */
+    gap: 40px; /* Reduz o espaçamento */
+    padding: 80px 20px; /* Ajusta o padding para telas menores */
+  }
+
+  .subtitulo {
+    display: none; /* Remove o subtítulo */
+  }
+
+  .formacao-texto {
+    font-size: 1.25rem; /* Diminui um pouco o tamanho do texto */
+    max-width: 100%; /* Permite que ocupe toda a largura disponível */
+    margin-left: 0; /* Remove a margem lateral */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .formacao-escola {
+    flex-direction: column; /* Coloca os itens em coluna */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  .faculdade {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 400px; /* Define um limite para evitar que fique muito largo */
+  }
+
+  .formacao-extra {
+    grid-column: auto; /* Ajusta para não depender da grid original */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza */
+  }
+
+  .cursos-lista li,
+  .idiomas-lista li {
+    flex-direction: column; /* Empilha os itens verticalmente */
+    text-align: center; /* Centraliza o texto */
+  }
+}

@@ -1,0 +1,23 @@
+body {
+  margin: 0rem;
+  font-family: montsserat, sans-serif;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.subtitulo {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+}
