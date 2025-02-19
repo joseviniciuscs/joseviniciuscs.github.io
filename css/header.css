@@ -15,8 +15,10 @@
 ul {
   list-style: none;
 }
-li a {
+.botao .link {
   text-decoration: none;
+  color: #9500d3;
+  padding: 10px 20px;
 }
 .botao {
   padding: 10px 20px;
@@ -29,6 +31,15 @@ li a {
 .dacruz {
   max-width: 200px;
   display: block;
+}
+.botao:hover {
+  background-color: #9500d3;
+}
+.botao .link:hover {
+  color: #f7f7f7;
+}
+.botao:focus {
+  border: 2px solid #9500d3;
 }
 @media (max-width: 800px) {
   .header {

@@ -10,7 +10,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 100px;
+  gap: 50px 100px;
   position: relative;
 }
 .footer-container::before {
@@ -39,6 +39,7 @@
 }
 .ctt-footer {
   color: #fff;
+  text-decoration: none;
 }
 .footer-direitos {
   font-size: 0.875rem;
@@ -67,8 +68,11 @@
   left: -47px;
   top: 8px;
 }
+.ctt-footer:hover {
+  color: #9500d3;
+}
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .footer-container {
     grid-template-columns: 1fr;
     gap: 40px;
